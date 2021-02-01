@@ -1,0 +1,30 @@
+{
+  "name": "muhammed-ibrahim-soylemez",
+  "version": "1.0.0",
+  "description": "Bu bir deneme projesidir",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "muhammed": "echo 'Benim Adım Muhammed'",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "deneme",
+    "paket"
+  ],
+  "author": "Muhammed İbrahim Söylemez",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.11.14",
+    "nodemailer": "^6.4.17",
+    "simple-is": "^0.2.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.4.0"
+  },
+
+  "repository":{
+    "type" : "git",
+    "url": "https://github.com/anatolianstream/Node-Npm.git"
+  }
+}

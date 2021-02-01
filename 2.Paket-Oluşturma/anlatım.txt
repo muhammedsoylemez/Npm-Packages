@@ -1,0 +1,46 @@
+Paket Oluşturma : Manifesto Dosyası
+
+ilk önce "npm init" komutunu çalıştırırız
+sonra package ismini veririz. (eğer yayınlanacaksa benzersiz bir isim verin)
+enter "version" görünecek
+enter "description" .. yazılaibilir.
+enter "entry point:" proje ana dosyasını belirtirsin. belirtmezsen index.js
+enter "test command :"  belli testler için komut yazılabilir.
+enter "git-repo:" eğer varsa adresi; git repo
+enter "keyword" : eğer yayınlanacaksa bulunması için keyword 
+enter "author"
+enter "license"
+enter .. yes oluşturur.
+daha sonra değişiklik yapacaksak package.json'dan değiştirebiliriz.
+
+komut eklemek istiyorsak "script" altına ekleyebiliriz.
+çalıştırmak için "npm run komut_adı"
+
+
+"package-lock.json" : node moduls değiştikçe kayıt yapan bir log.. eklediğimiz herhangi
+bir modulün nerede olduğunu versiyonunu bağımlılıklarını vs gösterir.
+
+
+
+Modul kullandıkça çok fazla yer kaplayacak .. ve bunları bir server'a gönderirken sıkıntı
+yaşayabiliriz. Bu yüzden sadece package.json göndermemiz yeterli.
+"package.json" varken terminalde sadece "npm install" yazarsak bütün bağımlılıkları indirir.
+
+
+
+Eğer indireceğimiz paket yalnızca development aşamasında kullanacaksak ve production
+aşamasında kullanmayacaksak .. indirirken ;
+"npm install paket_adı --save-dev" ... package.json'da devDependincies altında gözükür.
+
+
+!!!!!!! Projeyi github'a atmak için
+1. Github'da yeni bir repo oluştur. 
+2. Yolu kopyala ve "package.json" içerisine "repository" verisi olarak ekle.
+örnek kullanım ; 
+  "repository":{
+    "type" : "git",
+    "url": "https://github.com/kullanici_adi/repo_adi.git"
+  }
+
+Sonra github'ın verdiği command'leri sırasıyla uygula.
+(node-modules klasörü ve package-lock.json dosyasını silebiliriz.)
