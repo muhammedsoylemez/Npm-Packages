@@ -20,7 +20,7 @@ komut eklemek istiyorsak "script" altına ekleyebiliriz.
 "package-lock.json" : node moduls değiştikçe kayıt yapan bir log.. eklediğimiz herhangi
 bir modulün nerede olduğunu versiyonunu bağımlılıklarını vs gösterir.
 
-
+!!! Ayrıca npm init -y komutu ile tek seferde bütün sorulara yes şeklinde cevap verip package json dosyamızı oluşturabilriz.
 
 Modul kullandıkça çok fazla yer kaplayacak .. ve bunları bir server'a gönderirken sıkıntı
 yaşayabiliriz. Bu yüzden sadece package.json göndermemiz yeterli.
